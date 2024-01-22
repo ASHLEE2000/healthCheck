@@ -24,7 +24,7 @@ async function checkServiceHealth(apiUrl) {
 }
 
 // Set up an interval to call the health check function for each API every 10 minutes (600,000 milliseconds)
-const healthCheckInterval = 10 * 60 * 1000; // 10 minutes in milliseconds
+const healthCheckInterval = 2 * 60 * 1000; // 10 minutes in milliseconds
 
 async function runHealthChecks() {
   for (const apiUrl of healthApiUrls) {
